@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo Dinâmico</title>
+    <style>
+        /* CSS Básico apenas para organizar a tela */
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        .botoes { margin-bottom: 20px; }
+        button { padding: 10px 20px; margin: 5px; cursor: pointer; }
+        #vitrine { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+        .card { border: 1px solid #ccc; padding: 15px; border-radius: 8px; width: 200px; background: #f9f9f9; }
+    </style>
+</head>
+<body>
+
+    <h1>🍔 Nosso Catálogo</h1>
+
+    <div class="botoes">
+        <button onclick="filtrarItens('Todos')">Todos</button>
+        <button onclick="filtrarItens('Lanches')">Lanches</button>
+        <button onclick="filtrarItens('Bebidas')">Bebidas</button>
+    </div>
+
+    <div id="vitrine"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
